@@ -1,12 +1,18 @@
 from django.db import models
-from django.forms import CharField
 
 # Create your models here.
 
-class intel(models.Model):
-    name = models.CharField(max_length=100)
-    det = models.CharField(max_length=255)
-    email = models.CharField(max_length=255)
-    id = models.IntegerField(max_length=5,primary_key=True)
 
- 
+class detail(models.Model):
+    uname = models.CharField(max_length=100)
+    first = models.CharField(max_length=100,default='')
+    other = models.CharField(max_length=100,default='')
+    last = models.CharField(max_length=100,default='')
+    dept = models.CharField(max_length=100,default='')
+    faculty = models.CharField(max_length=100,default='')
+    level = models.CharField(max_length=100,default='')
+    gender = models.CharField(max_length=100,default='')
+    name = models.CharField(max_length=100,default='')
+    pword = models.CharField(max_length=100,default='')
+
+

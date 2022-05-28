@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<h2>Program computes area and perimeter of a square</h2>
+
+<form method="POST" action="square">
+    {% csrf_token %}
+The length:<input type="number" value="6" name="length"/><br><br>
+<input type="submit"/><br><br><br>
+</form>
+
+<br><br>
+<a href="/">Click here to go back to homepage</a>

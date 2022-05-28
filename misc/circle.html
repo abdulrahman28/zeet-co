@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<h2>Program computes the area and circumference of a circle</h2>
+
+<form method="POST" action="circle">
+    {% csrf_token %}
+The p:<input type="number" value="3.142" name="p"/><br><br>
+The radius:<input type="number" value="2" name="radius"/><br><br>
+<input type="submit"/><br><br><br>>
+</form>
+
+
+<br><br>
+<a href="/">Click here to go back to homepage</a>

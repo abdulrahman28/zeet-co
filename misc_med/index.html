@@ -1,0 +1,24 @@
+{% load static %}
+
+<h1>Welcome to my website</h1>
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+Your name is {{name}} <br>
+Your age is {{age}} <br>
+Your email is {{email}} <br>
+
+
+<h2> Calculator</h2>
+
+This is to sum number's together!!!<br><br>
+
+<form method="POST" action="SUM">
+      {% csrf_token %}
+
+First Number:<input type="number" Value="45" name="First"/><br><br> 
+Second Number:<input type="number" Value="45" name="Second"/><br><br>   
+<input type="Submit"/><br><br><br>
+</form>  
+

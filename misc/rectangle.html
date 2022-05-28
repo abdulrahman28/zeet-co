@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<h2>Program computes the perimeter and area of a rectangle</h2>
+
+
+<form method="POST" action="rectangle">
+    {% csrf_token %}
+The length:<input type="number" value="6" name="length"/><br><br>
+The width:<input type="number" value="7" name="width"/><br><br>
+<input type="submit"/><br><br><br>
+</form>
+
+<br><br>
+<a href="/">Click here to go back to homepage</a>

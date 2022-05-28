@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import intel
+from  .models import detail
 
 # Register your models here.
 
-admin.site.register(intel)
+
+admin.site.register(detail)
